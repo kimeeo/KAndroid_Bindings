@@ -24,16 +24,15 @@ public class ListViewBindingItemHolder<T extends ViewDataBinding> extends BaseIt
         super(itemView);
         binding = new Binding<T>(itemView,-1);
         setVariables(map);
+        setVariables(getDefaultMap());
     }
 
     public ListViewBindingItemHolder(View itemView){
         this(itemView, -1);
     }
-
     protected Map<Integer, Object> getDefaultMap() {
         return null;
     }
-
     public T getBinding(){
         return binding.getBinding();
     }
@@ -41,9 +40,8 @@ public class ListViewBindingItemHolder<T extends ViewDataBinding> extends BaseIt
         setVariable(item);
         super.updateItemView(item, position);
     }
-    public void updateItemView(Object data, View view, int position){
+    public void updateItemView(Object data, View view, int position){}
 
-    }
     public void setVariables(Map<Integer,Object> data){
         binding.setVariables(data);
     }

@@ -24,6 +24,7 @@ public class ViewPagerBindingItemHolder<T extends ViewDataBinding> extends BaseI
         super(itemView);
         binding = new Binding<T>(itemView,-1);
         setVariables(map);
+        setVariables(getDefaultMap());
     }
 
     public ViewPagerBindingItemHolder(View itemView){

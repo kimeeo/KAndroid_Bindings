@@ -25,6 +25,7 @@ public class RecyclerViewBindingItemHolder<T extends ViewDataBinding> extends Ba
         super(itemView);
         binding = new Binding<T>(itemView,-1);
         setVariables(map);
+        setVariables(getDefaultMap());
     }
 
     public RecyclerViewBindingItemHolder(View itemView){
