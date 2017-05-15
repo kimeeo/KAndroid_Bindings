@@ -4,7 +4,7 @@ apply plugin: 'com.android.databinding'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.0"
+    buildToolsVersion "25.0.2"
 
     defaultConfig {
         minSdkVersion 15
@@ -28,6 +28,6 @@ dependencies {
     final SUPPORT_LIBRARY_VERSION = '25.3.0'
     compile "com.android.support:appcompat-v7:$SUPPORT_LIBRARY_VERSION"
 
-    final KANDROID_LISTVIEW_VERSION = 'eefa65b'
+    final KANDROID_LISTVIEW_VERSION ='V3.0.7Beta';
     compile "com.github.kimeeo:KAndroid_ListView:$KANDROID_LISTVIEW_VERSION"
 }
